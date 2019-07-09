@@ -1,0 +1,141 @@
+extends .././layouts/main-layout.pug
+block content
+    main
+        section.represent
+            h1.vis-hid
+                | Ремонт Оконных и дверных конструкций
+            .represent__wrapper.container
+                .represent__wrapper-form
+                    b.represetnt__title
+                        | Ремонт Оконных и дверных конструкций
+                    form(action="").represent__form.form__middle
+                        fieldset.reresent__fieldset.form__middle-fieldset
+                            legend.represent__legend.form__middle-legend
+                                | Закажите 
+                                span.form__middle-span
+                                    | звонок
+                            input(type="text",
+                                placeholder="Ваше Имя").represent__input-text.form-middle__input-text
+                            input(type="text"
+                                placeholder="Ваш Телефон").represent__input-tel.form-middle__input-text
+                            button(tybe="submit").form__middle-btn.btn
+                                | Заказать звонок
+                ul.represent__list
+                    li.represent__list-item
+                        a(href="#").represent__list-link
+                            | Ремонт
+                            br
+                            | Окон
+                    li.represent__list-item
+                        a(href="#").represent__list-link
+                            | Замена
+                            br
+                            | Стеклопакета
+        section.week-product
+            .week-product__wrapper.container
+                .week-product__title-wrapper
+                    h2.week-product__mini-title
+                        | Заедает окно ?
+                    h3.week-product__title
+                        | Ремон и регулировка фурнитуры 
+                .week-product__dscr-wrapper
+                    p.week-product__dscr
+                            | Фурнитура как и любой другой механимз
+                            | требует ухода за ней.
+                            | Часто бывает, что окно требует
+                            | регулировки после длительной експлуатации.
+                    p.week-product__dscr
+                            | Мы проводим не только ремот и регулировку
+                            | но и замену комплектующих.
+                            | Помните, любые запчасти всегда можно заменить,
+                            | это дешевле нового окна и нет разрушений после монтажа.
+                    .week-product__img-wrapper
+                        img(src="imgs/furn.jpg").weekpr-oduct__img
+                    .week-product__price-wrapper
+                        a.week-product__price-btn.btn
+                            | Заказать                    
+        section.week-product
+            .week-product__wrapper.container
+                .week-product__title-wrapper
+                    h2.week-product__mini-title
+                        | как економить?
+                    h3.week-product__title
+                        | Замета стеклопакетов 
+                .week-product__dscr-wrapper
+                    p.week-product__dscr
+                            | Двухкамерный стелопакет.
+                            br
+                            | Наружное стелко
+                            | низкоэмиссионное (с солнцезащитой), 
+                            | внутренее энергосберегающее.
+                            | Позволяет минимум в 2 раза уменьшить энергопотери.
+                    table.week-prouct__data.data-table
+                        tr.data-table__tr
+                            td.data-table__td.data-table__title
+                                | Дистанция
+                            td.data-table__td.data-table__value
+                                | от 24 мм
+                        tr.data-table__tr
+                            td.data-table__td.data-table__title
+                                | Коэффициент теплопередачи
+                            td.data-table__td.data-table__value
+                                | 1.1
+                        tr.data-table__tr
+                            td.data-table__td.data-table__title
+                                | Размер
+                            td.data-table__td.data-table__value
+                                | От 0.5 м.кв.
+                    .week-product__img-wrapper
+                        img(src="imgs/pekaje.jpg").weekpr-oduct__img
+                    .week-product__price-wrapper
+                        a.week-product__price-btn.btn
+                            | Заказать
+        section.about-us
+            .about-us__wrapper.container
+                h2.about-us__title
+                    | Преимущества работы с нами
+                ul.about-us__list
+                    li.about-us__list-item
+                        | Заключение договора
+                        br
+                        | с мокрой печатью
+                    li.about-us__list-item
+                        | Огромный опыт работы
+                        br
+                        | в сфере
+                    li.about-us__list-item
+                        | Качественная консультация
+                        br
+                        | клиента
+                    li.about-us__list-item
+                        | Гарантия на работу
+                        br
+                        | и експлуатацию
+        section.contacts
+            .contacts__wrapper.container
+                h2.contacts__title
+                    | Контакты    
+                table.contacts__data-table.data-table
+                    tr.contacts__data-table-tr.data-table__tr
+                        td(valign="top").contacts__data-table-td.data-table__td.data-table__title
+                            | e-mail:
+                        td(valign="top").contacts__data-table-td.data-table__td.data-table__value
+                            | nfo@mimimishkashop.ru
+                    tr.contacts__data-table-tr.data-table__tr
+                        td(valign="top").contacts__data-table-td.data-table__td.data-table__title
+                            | Адрес:
+                        td(valign="top").contacts__data-table-td.data-table__td.data-table__value
+                            | г. Санкт-Петербург,
+                            br
+                            | ул. Большая Конюшенная,
+                            br
+                            | д. 19/8, офис 101
+                a(href="#").contacts__btn.btn
+                    | Напишите нам
+                .contacts__map
+                    picture
+                        source(media="(max-width:767px)", srcset="imgs/mobile/map-mobile@1x.jpg, imgs/mobile/map-mobile@2x.jpg")
+                        source(media="(max-width:1150px)", srcset="imgs/tablet/map-tablet@1x.jpg, imgs/tablet/map-tablet@2x.jpg")
+                        source(media="(min-width:1150px)", srcset="imgs/desktop/map-desktop@1x.jpg, imgs/desktop/map-desktop@2x.jpg")
+                        img(src="imgs/tablet/map-tablet@2x.jpg").contacts__map-img
+                    

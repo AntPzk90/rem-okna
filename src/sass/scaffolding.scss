@@ -1,0 +1,30 @@
+body{
+    font-family: "Open Sans","Arial", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+}
+a{
+    cursor: pointer;
+}
+.container{
+    padding: 0 30px;
+    margin: 0 auto;
+    @media screen and  (min-width:$tablet){
+        padding: 0 50px;
+    }
+    @media screen and  (min-width:$desktop){
+        padding: 0 50px;
+        max-width: 1050px;
+    }
+}
+.vis-hid{
+    position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}

@@ -1,0 +1,22 @@
+.data-table{
+    font-size: 15px;
+    line-height: 24px;
+    width: 100%;
+    @media screen and  (min-width:$desktop){
+        max-width: 300px;
+    }
+}
+.data-table__tr{
+    width: 100%;
+}
+.data-table__td{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+    color: #444;
+    width: 50%;
+}
+.data-table__title{
+    text-align: left;
+
+}

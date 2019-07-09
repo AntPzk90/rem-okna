@@ -1,0 +1,32 @@
+.form__middle{
+    background: rgba(92, 197, 181, 0.7);
+    padding: 10px;
+    height: 250px;
+}
+.form__middle-fieldset{
+    border: 3x solid #000;
+    border-radius: 10px;
+}
+.form__middle-legend{
+     font-size: 23px;
+     font-weight: bold;
+     padding: 0 10px;
+     color: #000;
+}
+.form-middle__input-text{
+    width: 80%;
+    margin-bottom: 20px;
+    border: none;
+    background-color: $dark-blue;
+    color: #fff;
+    padding: 10px;
+
+    &::placeholder{
+        color: $text-color;
+    }
+}
+.form__middle-btn{
+    width: 90%;
+
+    margin-bottom: 20px;
+}

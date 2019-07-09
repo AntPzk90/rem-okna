@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=cyrillic');
+@import "normalize.scss";
+@import "variables.scss";
+@import "scaffolding.scss";
+@import "mixins.scss";
+@import "components/btn.scss";
+
+// header
+
+@import "components/header.scss";
+@import "components/logo.scss";
+@import "components/site-list.scss";
+@import "components/search-form.scss";
+@import "components/basket-link.scss";
+
+//main
+@import "components/form__midle.scss";
+@import "components/represent.scss";
+@import "components/week-product.scss";
+@import "components/data-table.scss";
+@import "components/about-us.scss";
+@import "components/reviews.scss";
+@import "components/contacts.scss";
+
+// catalog
+
+@import "components/catalog-title.scss";
+@import "components/catalog-items.scss";
+@import "components/catalog-video.scss";
+
+//footer
+
+@import "components/footer.scss";

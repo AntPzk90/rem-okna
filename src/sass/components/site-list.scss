@@ -1,0 +1,42 @@
+
+.site-list{
+    @include list-reset;
+    @media screen and  (min-width:$tablet){
+        display: flex;
+        justify-content: space-between;
+    }
+    @media screen and  (min-width:$tablet){
+        flex-wrap: wrap;
+    }
+}
+.site-list__item{
+    text-align: center;
+    @include border;
+    a{
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        padding: 27px 0;
+        line-height: 24px;
+        font-weight: bold;
+        color: #000;
+        cursor: pointer;
+        text-transform: unset;
+        @media screen and  (min-width:$desktop){
+            padding: 32px 0;
+        }
+    }
+    @media screen and  (min-width:$tablet){
+        @include noneborder;
+        width: 49%;
+        text-align: left;
+        &:nth-child(2n){
+            box-sizing: border-box;
+            padding-left: 25px;
+            border: none;
+        }
+    }
+    @media screen and  (min-width:$desktop){
+        border-right: 1px solid #eee;
+    }
+}

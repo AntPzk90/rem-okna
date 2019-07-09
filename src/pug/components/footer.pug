@@ -1,0 +1,25 @@
+footer.footer
+    .footer__wrapper.container
+        a.footer__logo.logo
+            svg(width="90",height="36").logo-image
+                use(xlink:href="imgs/sprite.svg#logo-footer")
+        ul.fooetr__social-list
+            li.fooetr__social-list-item
+                a(href="#").footer__social-list-link
+                    svg.fooetr__social-list-img(width="22",height="22")
+                        use(xlink:href="imgs/sprite.svg#icon-insta")
+            li.fooetr__social-list-item
+                a(href="#").footer__social-list-link
+                    svg.fooetr__social-list-img(width="15",height="28")
+                        use(xlink:href="imgs/sprite.svg#icon-fb")
+            li.fooetr__social-list-item
+                a(href="#").footer__social-list-link
+                    svg.fooetr__social-list-img(width="24",height="20")
+                        use(xlink:href="imgs/sprite.svg#icon-twitter")
+        p.footer__developed-by
+            | разработано
+            a(href="#").footer__academy-logo
+                svg(width="27",height="34").footer__academy-logo-img
+                    use(xlink:href="imgs/sprite.svg#logo-htmlacademy")
+script(src="https://unpkg.com/scrollreveal")
+script(src="js/script.js")

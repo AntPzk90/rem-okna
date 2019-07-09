@@ -1,0 +1,165 @@
+.week-product{
+    padding-top: 30px;
+    padding-bottom:36px;
+    @include wawe;
+    @media screen and  (min-width:$tablet){
+        padding-top: 40px;
+        background-color: #fff;
+        padding-bottom: 74px;
+    }
+    @media screen and  (min-width:$desktop){
+        padding-top: 92px;
+        background-color: #fff;
+        padding-bottom: 0;
+    }
+}
+.week-product__wrapper{
+    @media screen and  (min-width:$desktop){
+        min-height: 636px;
+        padding-bottom: 100px;
+    }
+}
+.week-product__title-wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+    @media screen and  (min-width:$tablet){
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 55px;
+    }
+    @media screen and  (min-width:$desktop){
+        margin-top: 10px;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: -130px;
+    }
+}
+.week-product__mini-title{
+    color: #63d1bb;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    @media screen and  (min-width:$tablet){
+        width: 100px;
+        text-align: center;
+    }
+    @media screen and  (min-width:$desktop){
+        width: 100px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+}
+.week-product__title{
+    @include title;
+    margin-bottom: 5px;
+    @media screen and  (min-width:$desktop){
+        position: relative;
+        z-index: 3;
+        margin-left: 40px;
+    }
+}
+.week-product__dscr{
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
+    box-sizing: border-box;
+    padding-right: 20px;
+    @media screen and  (min-width:$tablet){
+        margin-top: 0;
+        max-width: 334px;
+        font-size: 17px;
+        line-height: 30px;
+    }
+    @media screen and  (min-width:$desktop){
+        margin-bottom: 44px;
+    }
+}
+.week-prouct__data{
+    border-collapse: collapse;
+    margin-bottom: 25px;
+    @media screen and  (min-width:$tablet){
+        max-width: 334px;
+    }
+    @media screen and  (min-width:$desktop){
+        margin-bottom: 88px;
+    }
+}
+.week-product__dscr-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    @media screen and  (min-width:$tablet){
+        position: relative;
+        min-height: 404px;
+        box-sizing: border-box;
+        padding-right: 55%;
+    }
+    @media screen and  (min-width:$desktop){
+        position: relative;
+        min-height: 404px;
+        box-sizing: border-box;
+        padding-right: 55%;
+        padding-left: 175px;
+        padding-top: 160px;
+    }
+}
+.week-product__img-wrapper{
+    width: 100%;
+    height: 315px;
+    background-color:#fff;
+    margin-bottom: 25px;
+    @media screen and  (min-width:$tablet){
+        width: 50%;
+        height: 404px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    @media screen and  (min-width:$desktop){
+        width: 50%;
+        height: 636px;
+        position: absolute;
+        top: 15px;
+        right: 0;
+    }
+}
+.weekpr-oduct__img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+.week-product__price-wrapper{
+    width: 100%;
+    @media screen and  (min-width:$tablet){
+        width: 100%;
+        max-width: 334px;
+    }
+}
+.week-product__price{
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #444444;
+    @media screen and  (min-width:$tablet){
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 40px;
+    }
+}
+.week-product__price-btn{
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    margin:0 auto;
+    @media screen and  (min-width:$desktop){
+        margin: 0;
+        max-width: 290px;
+    }
+}

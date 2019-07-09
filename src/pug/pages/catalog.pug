@@ -1,0 +1,92 @@
+extends .././layouts/main-layout.pug
+block title
+    title
+        | catalog
+block content
+    main
+        section.catalog-title
+            div.catalog-title__wrapper.container
+                h2.catalog-title__main-title
+                    | Каталог товаров
+        section.catalog-items
+            div.catalog-items__wrapper.container
+                h2.catalog-items__title.vis-hid
+                    | Блок с товарами
+                ul.catalog-items__list
+                    li.catalogs-items__list-item
+                        a(href="#").catalog-items__img-link
+                            .catalogs-items__images-wrapper
+                                picture.catalog-items__picture
+                                    source(media="(max-width:767px)", srcset="imgs/mobile/photo-hare-mobile@1x.jpg, imgs/mobile/photo-hare-mobile@2x.jpg")
+                                    source(media="(max-width:1150px)", srcset="imgs/tablet/photo-hare-tablet@1x.jpg, imgs/tablet/photo-hare-tablet@2x.jpg")
+                                    source(media="(min-width:1150px)", srcset="imgs/desktop/photo-hare-desktop@1x.jpg, imgs/desktop/photo-hare-desktop@2x.jpg")
+                                    img(src="imgs/mobile/photo-hare-mobile@1x.jpg").catalogs-items__picture-img
+                        .catalog-items__txt-wrapper        
+                            a(href="#").catalog-items__title-link
+                                h3.catalog-items__items-title
+                                    | Зайчик попрыгайчик
+                            p.catalog-items__item-data
+                                | Рост 30 см, вес 200 г
+                            p.catalog-items__price
+                                | 1 200 руб.
+                                a(href="#").catalog-items__cart
+                                    svg.catalog-items__cart-svg
+                                        use(xlink:href="imgs/sprite.svg#icon-cart")
+                    li.catalogs-items__list-item
+                        a(href="#").catalog-items__img-link
+                            .catalogs-items__images-wrapper
+                                picture.catalog-items__picture
+                                    source(media="(max-width:767px)", srcset="imgs/mobile/photo-bowl-mobile@1x.jpg, imgs/mobile/photo-bowl-mobile@2x.jpg")
+                                    source(media="(max-width:1150px)", srcset="imgs/tablet/photo-bowl-tablet@1x.jpg, imgs/tablet/photo-bowl-tablet@2x.jpg")
+                                    source(media="(min-width:1150px)", srcset="imgs/desktop/photo-bowl-desktop@1x.jpg, imgs/desktop/photo-bowl-desktop@2x.jpg")
+                                    img(src="imgs/mobile/photo-bowl-mobile@1x.jpg").catalogs-items__picture-img
+                        .catalog-items__txt-wrapper        
+                            a(href="#").catalog-items__title-link
+                                h3.catalog-items__items-title
+                                    | Корзинка для белья
+                            p.catalog-items__item-data
+                                | диаметр 15 см, высота 10 см
+                            p.catalog-items__price
+                                | 690 руб.
+                                a(href="#").catalog-items__cart
+                                    svg.catalog-items__cart-svg
+                                        use(xlink:href="imgs/sprite.svg#icon-cart")
+                    li.catalogs-items__list-item
+                        a(href="#").catalog-items__img-link
+                            .catalogs-items__images-wrapper
+                                picture.catalog-items__picture
+                                    source(media="(max-width:767px)", srcset="imgs/mobile/photo-toys-mobile@1x.jpg, imgs/mobile/photo-toys-mobile@2x.jpg")
+                                    source(media="(max-width:1150px)", srcset="imgs/tablet/photo-toys-tablet@1x.jpg, imgs/tablet/photo-toys-tablet@2x.jpg")
+                                    source(media="(min-width:1150px)", srcset="imgs/desktop/photo-toys-desktop@1x.jpg, imgs/desktop/photo-toys-desktop@2x.jpg")
+                                    img(src="imgs/mobile/photo-toys-mobile@1x.jpg").catalogs-items__picture-img
+                        .catalog-items__txt-wrapper        
+                            a(href="#").catalog-items__title-link
+                                h3.catalog-items__items-title
+                                    | Большая корзинка
+                                    br
+                                    | для игрушек
+                            p.catalog-items__item-data
+                                | диаметр 30 см, высоту 30 см
+                            p.catalog-items__price
+                                | 1 500 руб.
+                                a(href="#").catalog-items__cart
+                                    svg.catalog-items__cart-svg
+                                        use(xlink:href="imgs/sprite.svg#icon-cart")
+        section.catalog-video
+            .catalog-video__wrapper.container
+                .catalog-video__border-wrapper
+                    h2.catalog-video__title
+                        | Процесс производства
+                    .catalog-video__video-wrapper
+                        video(src="#"
+                            poster="imgs/mobile/video-mobile@1x.jpg").catalog-video__video
+                        button(type="button").catalog-video__play-btn
+                            svg.catalog-items__cart-svg
+                                use(xlink:href="imgs/sprite.svg#icon-play")
+
+                    p.catalog-video__txt
+                        | По просьбам наших любимых фолловеров мы сняли для вас
+                        | подробное видео о том, как появляются наши товары.
+                    a(href="#").catalog-video__btn.btn
+                        | Сделать заказ
+                

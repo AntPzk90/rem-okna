@@ -1,0 +1,76 @@
+@mixin title {
+    color:#000;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 30px;
+    margin: 0;
+    @media screen and  (min-width:$tablet){
+        font-size: 43px;
+        line-height: 50px;
+    }
+    @media screen and  (min-width:$desktop){
+        font-size: 53px;
+        line-height: 57px;
+    }
+}
+@mixin list-reset{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+@mixin border{
+    position: relative;
+    &:after{
+        content:"";
+        position: absolute;
+        bottom: -1px;
+        left: -30px;
+        display: block;
+        width: calc(100% + 60px);
+        height: 1px;
+        background-color: #eee;
+        z-index: 1;
+    }
+}
+@mixin tabborder{
+    position: relative;
+    &:after{
+        content:"";
+        position: absolute;
+        bottom: -1px;
+        left: -30px;
+        display: block;
+        width: calc(100% + 50px);
+        height: 1px;
+        background-color: #eee;
+        z-index: 1;
+    }
+}
+@mixin noneborder{
+    &::after{
+        display: none;
+    }
+}
+@mixin wawe {
+    position: relative;
+    &:after{
+        @media screen and  (min-width:$tablet){
+            content: "";
+            display: block;
+            width: 100%;
+            height: 5px;
+            background-color: #eee;
+            bottom: 0;
+            left:-50px;
+            background-size:1150px auto;
+            width: calc(100% + 50px);
+            height:5px;
+        }
+        @media screen and  (min-width:$desktop){
+            left:0;
+            width: 100%;
+            background-size:1150px auto;
+            height:5px;
+        }
+    }
+}

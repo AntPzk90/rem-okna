@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>catalog</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper container">
+        <button class="header__mobile header__mobile--close"></button><a class="header__logo logo" href="index.html">
+          <picture class="header__logo-picture">
+            <source media="(max-width:768px)" srcset="imgs/sprite.svg#logo-mobile"/>
+            <source media="(max-width:1150px)" srcset="imgs/sprite.svg#logo-tablet"/>
+            <source media="(min-width:1150px)" srcset="imgs/sprite.svg#logo-desktop"/><img src="imgs/sprite.svg#logo-mobile" alt="logo"/>
+          </picture></a>
+        <nav class="header__main-nav">
+          <ul class="site-list">
+            <li class="site-list__item"><a href="catalog.html">Ремонт  регулировка</a></li>
+            <li class="site-list__item"><a href="form.html">Замента стеклопакетов</a></li>
+          </ul>
+        </nav>
+        <div class="header__user-wrapper"><a class="header__basket-link basket-link" href="#">+3 8097 666 33 33</a></div>
+        <p class="header__delivery">Звоните в любое время</p>
+        <ul class="header__more-list">
+          <li class="header__more-list-item"><a class="header__more-list-link" href="#">Новые поступления</a></li>
+          <li class="header__more-list-item"><a class="header__more-list-link" href="#">Распродажа</a></li>
+        </ul>
+      </div>
+    </header>
+  </body>
+</html>
+<main>
+  <section class="catalog-title">
+    <div class="catalog-title__wrapper container">
+      <h2 class="catalog-title__main-title">Каталог товаров</h2>
+    </div>
+  </section>
+  <section class="catalog-items">
+    <div class="catalog-items__wrapper container">
+      <h2 class="catalog-items__title vis-hid">Блок с товарами</h2>
+      <ul class="catalog-items__list">
+        <li class="catalogs-items__list-item"><a class="catalog-items__img-link" href="#">
+            <div class="catalogs-items__images-wrapper">
+              <picture class="catalog-items__picture">
+                <source media="(max-width:767px)" srcset="imgs/mobile/photo-hare-mobile@1x.jpg, imgs/mobile/photo-hare-mobile@2x.jpg"/>
+                <source media="(max-width:1150px)" srcset="imgs/tablet/photo-hare-tablet@1x.jpg, imgs/tablet/photo-hare-tablet@2x.jpg"/>
+                <source media="(min-width:1150px)" srcset="imgs/desktop/photo-hare-desktop@1x.jpg, imgs/desktop/photo-hare-desktop@2x.jpg"/><img class="catalogs-items__picture-img" src="imgs/mobile/photo-hare-mobile@1x.jpg"/>
+              </picture>
+            </div></a>
+          <div class="catalog-items__txt-wrapper">       <a class="catalog-items__title-link" href="#">
+              <h3 class="catalog-items__items-title">Зайчик попрыгайчик</h3></a>
+            <p class="catalog-items__item-data">Рост 30 см, вес 200 г</p>
+            <p class="catalog-items__price">1 200 руб.<a class="catalog-items__cart" href="#">
+                <svg class="catalog-items__cart-svg">
+                  <use xlink:href="imgs/sprite.svg#icon-cart"></use>
+                </svg></a></p>
+          </div>
+        </li>
+        <li class="catalogs-items__list-item"><a class="catalog-items__img-link" href="#">
+            <div class="catalogs-items__images-wrapper">
+              <picture class="catalog-items__picture">
+                <source media="(max-width:767px)" srcset="imgs/mobile/photo-bowl-mobile@1x.jpg, imgs/mobile/photo-bowl-mobile@2x.jpg"/>
+                <source media="(max-width:1150px)" srcset="imgs/tablet/photo-bowl-tablet@1x.jpg, imgs/tablet/photo-bowl-tablet@2x.jpg"/>
+                <source media="(min-width:1150px)" srcset="imgs/desktop/photo-bowl-desktop@1x.jpg, imgs/desktop/photo-bowl-desktop@2x.jpg"/><img class="catalogs-items__picture-img" src="imgs/mobile/photo-bowl-mobile@1x.jpg"/>
+              </picture>
+            </div></a>
+          <div class="catalog-items__txt-wrapper">       <a class="catalog-items__title-link" href="#">
+              <h3 class="catalog-items__items-title">Корзинка для белья</h3></a>
+            <p class="catalog-items__item-data">диаметр 15 см, высота 10 см</p>
+            <p class="catalog-items__price">690 руб.<a class="catalog-items__cart" href="#">
+                <svg class="catalog-items__cart-svg">
+                  <use xlink:href="imgs/sprite.svg#icon-cart"></use>
+                </svg></a></p>
+          </div>
+        </li>
+        <li class="catalogs-items__list-item"><a class="catalog-items__img-link" href="#">
+            <div class="catalogs-items__images-wrapper">
+              <picture class="catalog-items__picture">
+                <source media="(max-width:767px)" srcset="imgs/mobile/photo-toys-mobile@1x.jpg, imgs/mobile/photo-toys-mobile@2x.jpg"/>
+                <source media="(max-width:1150px)" srcset="imgs/tablet/photo-toys-tablet@1x.jpg, imgs/tablet/photo-toys-tablet@2x.jpg"/>
+                <source media="(min-width:1150px)" srcset="imgs/desktop/photo-toys-desktop@1x.jpg, imgs/desktop/photo-toys-desktop@2x.jpg"/><img class="catalogs-items__picture-img" src="imgs/mobile/photo-toys-mobile@1x.jpg"/>
+              </picture>
+            </div></a>
+          <div class="catalog-items__txt-wrapper">       <a class="catalog-items__title-link" href="#">
+              <h3 class="catalog-items__items-title">Большая корзинка<br/>для игрушек</h3></a>
+            <p class="catalog-items__item-data">диаметр 30 см, высоту 30 см</p>
+            <p class="catalog-items__price">1 500 руб.<a class="catalog-items__cart" href="#">
+                <svg class="catalog-items__cart-svg">
+                  <use xlink:href="imgs/sprite.svg#icon-cart"></use>
+                </svg></a></p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="catalog-video">
+    <div class="catalog-video__wrapper container">
+      <div class="catalog-video__border-wrapper">
+        <h2 class="catalog-video__title">Процесс производства</h2>
+        <div class="catalog-video__video-wrapper">
+          <video class="catalog-video__video" src="#" poster="imgs/mobile/video-mobile@1x.jpg"></video>
+          <button class="catalog-video__play-btn" type="button">
+            <svg class="catalog-items__cart-svg">
+              <use xlink:href="imgs/sprite.svg#icon-play"></use>
+            </svg>
+          </button>
+        </div>
+        <p class="catalog-video__txt">
+          По просьбам наших любимых фолловеров мы сняли для вас
+          подробное видео о том, как появляются наши товары.
+        </p><a class="catalog-video__btn btn" href="#">Сделать заказ</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer__wrapper container"><a class="footer__logo logo">
+      <svg class="logo-image" width="90" height="36">
+        <use xlink:href="imgs/sprite.svg#logo-footer"></use>
+      </svg></a>
+    <ul class="fooetr__social-list">
+      <li class="fooetr__social-list-item"><a class="footer__social-list-link" href="#">
+          <svg class="fooetr__social-list-img" width="22" height="22">
+            <use xlink:href="imgs/sprite.svg#icon-insta"></use>
+          </svg></a></li>
+      <li class="fooetr__social-list-item"><a class="footer__social-list-link" href="#">
+          <svg class="fooetr__social-list-img" width="15" height="28">
+            <use xlink:href="imgs/sprite.svg#icon-fb"></use>
+          </svg></a></li>
+      <li class="fooetr__social-list-item"><a class="footer__social-list-link" href="#">
+          <svg class="fooetr__social-list-img" width="24" height="20">
+            <use xlink:href="imgs/sprite.svg#icon-twitter"></use>
+          </svg></a></li>
+    </ul>
+    <p class="footer__developed-by">разработано<a class="footer__academy-logo" href="#">
+        <svg class="footer__academy-logo-img" width="27" height="34">
+          <use xlink:href="imgs/sprite.svg#logo-htmlacademy"></use>
+        </svg></a></p>
+  </div>
+</footer>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="js/script.js"></script>

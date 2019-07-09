@@ -1,0 +1,31 @@
+.logo{
+    position: relative;
+    @include border;
+    .logo__image-tablet{
+        display: none;
+    }
+    .logo__image-desktop{
+        display: none;
+    }
+    @media screen and  (min-width:$tablet){
+        text-align: left;
+        &:after{
+            left: -60px;
+        }
+        .logo__image-moby{
+            display: none;
+        }
+        .logo__image-tablet{
+            display: inline;
+        }
+    }
+    @media screen and  (min-width:$desktop){
+        .logo__image-tablet{
+            display: none;
+        }
+        .logo__image-desktop{
+            display: inline;
+        }
+        @include noneborder;
+    }
+}

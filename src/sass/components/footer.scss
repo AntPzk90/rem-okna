@@ -1,0 +1,72 @@
+.footer{
+    background-color: #f1f1f1;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    @media screen and  (min-width:$tablet){
+        padding-top: 45px;
+        padding-bottom: 50px;
+    }
+}
+.footer__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    @media screen and  (min-width:$tablet){
+        flex-direction: row;
+    }
+}
+.footer__logo{
+    display: none;
+    @media screen and  (min-width:$tablet){
+        display: block;
+        margin-right: 10%;
+        &:hover{
+            fill: #63d1bb;
+        }
+    }
+}
+.fooetr__social-list{
+    @include list-reset;
+    width: 145px;
+    margin-bottom: 28px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and  (min-width:$tablet){
+        margin: 0;
+    }
+}
+.fooetr__social-list-item{
+    &:hover{
+        .fooetr__social-list-img{
+            fill: #63d1bb;
+        }
+    }
+}
+.footer__developed-by{
+    padding-top: 22px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 15%;
+    padding-right: 15%;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    font-size: 19px;
+    font-weight: bold;
+    @media screen and  (min-width:$tablet){
+        width: 180px;
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+.footer__academy-logo{
+    &:hover{
+        svg{
+            fill: #63d1bb;
+        }
+    }
+}

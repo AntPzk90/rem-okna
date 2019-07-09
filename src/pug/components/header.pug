@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="css/style.css")
+        block title
+            title index
+    body
+        header.header
+            .header__wrapper.container
+                button.header__mobile.header__mobile--close
+                a(href="index.html").header__logo.logo
+                    picture.header__logo-picture
+                        source(media="(max-width:768px)", srcset="imgs/sprite.svg#logo-mobile")
+                        source(media="(max-width:1150px)", srcset="imgs/sprite.svg#logo-tablet")
+                        source(media="(min-width:1150px)", srcset="imgs/sprite.svg#logo-desktop")
+                        img(src="imgs/sprite.svg#logo-mobile", alt="logo")
+                nav.header__main-nav
+                    ul.site-list
+                        +navList(navItems)
+                .header__user-wrapper
+                    a(href="#").header__basket-link.basket-link
+                        | +3 8097 666 33 33
+                p.header__delivery
+                    | Звоните в любое время
+                ul.header__more-list
+                    li.header__more-list-item
+                        a(href="#").header__more-list-link
+                            | Новые поступления
+                    li.header__more-list-item
+                        a(href="#").header__more-list-link
+                            | Распродажа
