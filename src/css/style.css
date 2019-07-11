@@ -309,7 +309,7 @@ template {
   display: none; }
 
 body {
-  font-family: "Open Sans","Arial", sans-serif;
+  font-family: "Montserrat","Arial", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 30px; }
@@ -339,6 +339,34 @@ a {
   width: 1px !important;
   overflow: hidden; }
 
+@-webkit-keyframes pulse {
+  0% {
+    background-position: 0 0; }
+  10% {
+    background-position: 10% 0; }
+  20% {
+    background-position: 20% 0; }
+  50% {
+    background-position: 50% 0; }
+  80% {
+    background-position: 80% 0; }
+  100% {
+    background-position: 100% 0; } }
+
+@keyframes pulse {
+  0% {
+    background-position: 0 0; }
+  10% {
+    background-position: 10% 0; }
+  20% {
+    background-position: 20% 0; }
+  50% {
+    background-position: 50% 0; }
+  80% {
+    background-position: 80% 0; }
+  100% {
+    background-position: 100% 0; } }
+
 .btn {
   font-size: 17px;
   font-weight: bold;
@@ -356,6 +384,21 @@ a {
   .btn:active {
     color: rgba(255, 255, 255, 0.6);
     background-color: #444444; }
+
+.master-call {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #56c3b2;
+  position: relative; }
+
+.master-call__svg {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 10px;
+  left: 15px;
+  z-index: 2; }
 
 .header {
   position: relative;
@@ -797,48 +840,49 @@ a {
 
 .basket-link__svg {
   position: absolute;
-  top: 30px;
+  top: 25px;
   left: 40px;
   fill: #62d1ba; }
 
 .form__middle {
-  background: #f1f1f1;
+  background-image: url("../imgs/form-bg.jpg");
+  background-size: cover;
   padding: 10px;
-  height: 250px; }
+  height: 260px; }
 
 .form__middle-fieldset {
-  border: 3x solid #000;
+  border: 3x solid #fff;
   border-radius: 10px; }
 
 .form__middle-legend {
   font-size: 23px;
   font-weight: bold;
   padding: 0 10px;
-  color: #000; }
+  color: #fff; }
 
 .form-middle__input-text {
   width: 80%;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   border: none;
-  background-color: #56c3b2;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   padding: 10px; }
   .form-middle__input-text::-webkit-input-placeholder {
-    color: #444444; }
+    color: #000; }
   .form-middle__input-text::-moz-placeholder {
-    color: #444444; }
+    color: #000; }
   .form-middle__input-text:-ms-input-placeholder {
-    color: #444444; }
+    color: #000; }
   .form-middle__input-text::-ms-input-placeholder {
-    color: #444444; }
+    color: #000; }
   .form-middle__input-text::placeholder {
-    color: #444444; }
+    color: #000; }
 
 .form__middle-btn {
   width: 90%;
   background-color: #f6cb47;
-  border-radius: 30px;
-  margin-bottom: 20px; }
+  margin-top: 10px;
+  margin-bottom: 15px; }
 
 .represent {
   background-color: #fafafa;
@@ -912,7 +956,27 @@ a {
 
 .represet__master-call {
   padding: 10px 20px;
-  border-radius: 50px; }
+  background-image: url("../imgs/gradient.jpg");
+  background-size: 6000px 100px;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  position: relative;
+  padding: 10px;
+  -webkit-animation: pulse 5s infinite;
+  animation: pulse 5s infinite; }
+
+.represet__master-call-svg {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 10px;
+  left: 15px;
+  z-index: 2; }
+  @media screen and (min-width: 768px) {
+    .represet__master-call-svg {
+      width: 50px;
+      height: 50px;
+      left: 30px; } }
 
 .represent__form {
   margin-bottom: 50px; }
@@ -1185,7 +1249,17 @@ a {
   display: block; }
 
 .week-product__price-wrapper {
-  width: 100%; }
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
   @media screen and (min-width: 768px) {
     .week-product__price-wrapper {
       width: 100%;
@@ -1202,6 +1276,14 @@ a {
       font-size: 20px;
       line-height: 24px;
       margin-bottom: 40px; } }
+
+.week-product__master-call-btn {
+  max-width: 280px;
+  width: 100%;
+  margin-top: 20px; }
+  @media screen and (min-width: 768px) {
+    .week-product__master-call-btn {
+      display: none; } }
 
 .week-product__price-btn {
   display: block;
@@ -1719,54 +1801,6 @@ a {
       align-self: flex-start;
       margin: 0;
       max-width: 230px; } }
-
-.master-call {
-  display: block;
-  text-decoration: none;
-  color: #fff;
-  background: #62d1ba;
-  margin-top: 30px;
-  position: relative;
-  padding: 10px;
-  -webkit-animation: pulse 10s infinite;
-  animation: pulse 10s infinite; }
-
-.master-call__svg {
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  top: 10px;
-  left: 15px;
-  z-index: 2; }
-  @media screen and (min-width: 768px) {
-    .master-call__svg {
-      width: 50px;
-      height: 50px;
-      left: 30px; } }
-
-@-webkit-keyframes pulse {
-  0% {
-    background-color: #62d1ba; }
-  20% {
-    background-color: #fcbd34; }
-  50% {
-    background-color: #fa9030; }
-  80% {
-    background-color: #fcbd34; }
-  100% {
-    background-color: #62d1ba; } }
-
-@keyframes pulse {
-  0% {
-    background-color: #62d1ba; }
-  20% {
-    background-color: #fcbd34; }
-  50% {
-    background-color: #fa9030; }
-  80% {
-    background-color: #fcbd34; }
-  100% {
-    background-color: #62d1ba; } }
 
 .catalog-title {
   padding-top: 50px;

@@ -9,7 +9,7 @@ block content
                     b.represetnt__title
                         | Ремонт Оконных и дверных конструкций
                         a(href="#",tel="+380977736663").represet__master-call.master-call
-                            svg(width="25",height="25",fill="#fff").master-call__svg
+                            svg(fill="#fff").represet__master-call-svg
                                 use(xlink:href="imgs/sprite.svg#icon-phone")
                             | 8097 773 66 63
                     form(action="").represent__form.form__middle
@@ -57,7 +57,11 @@ block content
                         img(src="imgs/furn.jpg").weekpr-oduct__img
                     .week-product__price-wrapper
                         a.week-product__price-btn.btn
-                            | Заказать                    
+                            | Заказать               
+                        a(href="#",tel="+380977736663").week-product__master-call-btn.master-call.btn
+                            svg(fill="#fff").master-call__svg
+                                use(xlink:href="imgs/sprite.svg#icon-phone")
+                            | 8097 773 66 63     
         section.week-product
             .week-product__wrapper.container
                 .week-product__title-wrapper
@@ -94,6 +98,10 @@ block content
                     .week-product__price-wrapper
                         a.week-product__price-btn.btn
                             | Заказать
+                        a(href="#",tel="+380977736663").week-product__master-call-btn.master-call.btn
+                            svg(fill="#fff").master-call__svg
+                                use(xlink:href="imgs/sprite.svg#icon-phone")
+                            | 8097 773 66 63     
         section.about-us
             .about-us__wrapper.container
                 h2.about-us__title
