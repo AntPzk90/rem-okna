@@ -25,6 +25,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64c7b8', end
 }
 .about-us__list{
     @include list-reset;
+    padding-bottom:50px;
     @media screen and  (min-width:$tablet){
         display: flex;
         flex-wrap: wrap
@@ -38,7 +39,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64c7b8', end
     min-height: 100px;
     margin-bottom: 25px;
     box-sizing: border-box;
-    padding-top: 60px;
+    padding-top: 100px;
     font-size: 17px;
     line-height: 20px;
     color: #000;
@@ -56,45 +57,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64c7b8', end
     &:before{
         content: "";
         display: block;
-        width: 48px;
-        height: 48px;
+        width: 90px;
+        height: 90px;
         position: absolute;
+        border-radius: 50%;
         top: 0px;
         left: 0px;
-        background-image: url("../imgs/sprite.svg#icon-feature-flower");
-        background-size: cover;
-        background-position: 50% 0;
+        background-image: url("../imgs/sprite.svg#icon-document");
+        background-size: 120px 100px;
+        background-position: 50%;
         background-repeat: no-repeat;
+        background-color: $dark-blue;
     }
 }
 .about-us__list-item:nth-child(2){
     &:before{
-        background-image: url("../imgs/sprite.svg#icon-feature-money");
-        height: 28px;
+        background-image: url("../imgs/sprite.svg#icon-builder");
     }
 }
 .about-us__list-item:nth-child(3){
     &:before{
-        background-image: url("../imgs/sprite.svg#icon-feature-heart");
-        height: 28px;
+        background-image: url("../imgs/sprite.svg#icon-call");
     }
 }
 .about-us__list-item:nth-child(4){
     &:before{
-        background-image: url("../imgs/sprite.svg#icon-feature-ball");
-        height: 36px;
-    }
-}
-.about-us__list-item:nth-child(5){
-    &:before{
-        background-image: url("../imgs/sprite.svg#icon-feature-rocket");
-        width: 54px;
-        height: 25px;
-    }
-}
-.about-us__list-item:nth-child(6){
-    &:before{
-        background-image: url("../imgs/sprite.svg#icon-feature-gift");
-        height: 36px;
+        background-image: url("../imgs/sprite.svg#icon-warn");
     }
 }

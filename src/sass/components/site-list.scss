@@ -22,8 +22,12 @@
         color: #000;
         cursor: pointer;
         text-transform: unset;
+        &:hover{
+            color: $dark-blue;
+        }
         @media screen and  (min-width:$desktop){
             padding: 32px 0;
+            padding-left:35px;
         }
     }
     @media screen and  (min-width:$tablet){
@@ -31,8 +35,6 @@
         width: 49%;
         text-align: left;
         &:nth-child(2n){
-            box-sizing: border-box;
-            padding-left: 25px;
             border: none;
         }
     }

@@ -20,12 +20,10 @@
         order: 1;
     }
     @media screen and  (min-width:$desktop){
-        width: 245px;
+        width: 145px;
         height: 74px;
         padding: 7px 0;
-        padding-left: 75px;
-        order: 2;
-        flex-grow: 1;
+        padding-left: 0;
     }
     &:hover{
         opacity: 0.7;
@@ -116,13 +114,19 @@
     .header__more-list-link{
         display: inline-block;
         vertical-align: baseline;
-        padding-top: 22px;
-        padding-bottom: 22px;
         font-size: 15px;
         line-height: 24px;
         font-weight: bold;
+        margin-top: 10px;
         color: #000;
         text-decoration: none;
+        background-color: #f6cb47;
+        padding: 6px 10px;
+        border-radius: 40px;
+        &:hover{
+            color: #fff;
+            background-color: $dark-blue;
+        }
     }
 }
 .header__wrapper{
@@ -157,7 +161,6 @@
         width: 50%;
     }
     @media screen and  (min-width:$desktop){
-        width: 375px;
         order: 1;
     }
 }

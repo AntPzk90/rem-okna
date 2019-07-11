@@ -22,13 +22,12 @@ html(lang="en")
                         +navList(navItems)
                 .header__user-wrapper
                     a(href="#").header__basket-link.basket-link
+                        svg(width="27",height="34").basket-link__svg
+                            use(xlink:href="imgs/sprite.svg#icon-phone")
                         | +3 8097 666 33 33
                 p.header__delivery
-                    | Звоните в любое время
+                    | Рекомендуем позвонить мастеру 
                 ul.header__more-list
                     li.header__more-list-item
                         a(href="#").header__more-list-link
-                            | Новые поступления
-                    li.header__more-list-item
-                        a(href="#").header__more-list-link
-                            | Распродажа
+                            | Статьи про Обслуживание

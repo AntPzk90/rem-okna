@@ -158,6 +158,8 @@
     width: 100%;
     max-width: 280px;
     margin:0 auto;
+    background-color: $blue;
+    color: #fff;
     @media screen and  (min-width:$desktop){
         margin: 0;
         max-width: 290px;

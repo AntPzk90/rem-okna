@@ -12,20 +12,7 @@
     text-decoration: none;
     position:relative;
     @include border;
-    &:after{
-        content: "";
-        display: block;
-        width: 21px;
-        height: 19px;
-        position: absolute;
-        top: 30px;
-        left: 0px;
-        background-image: url("../imgs/sprite.svg#icon-cart");
-        background-size: cover;
-        background-position: 50% 0;
-        background-repeat: no-repeat;
-        background-color:transparent;
-    }
+    
     @media screen and  (min-width:$tablet){
         @include noneborder;
         position:relative;
@@ -35,19 +22,17 @@
         padding-bottom: 32px;
         padding-right: 0;
         border-left: 1px solid #eee;
-        &:after{
-            content: "";
-        display: block;
-        width: 21px;
-        height: 19px;
-        position: absolute;
-        top: 36px;
-        left: 32px;
-        background-image: url("../imgs/sprite.svg#icon-cart");
-        background-size: cover;
-        background-position: 50% 0;
-        background-repeat: no-repeat;
-        background-color:transparent;
+    }
+    &:hover{
+        color: blue;
+        .basket-link__svg{
+            fill: $dark-blue;
         }
     }
+}
+.basket-link__svg{
+    position: absolute;
+        top: 30px;
+        left: 40px;
+        fill: $blue;      
 }
