@@ -78,10 +78,7 @@
     position: relative;
     padding: 10px;
     animation: pulse 5s infinite;
-    text-align: right;
-    @media screen and  (min-width:$tablet){
-        text-align: center;
-    }
+    text-align: center;
 }
 .represet__master-call-svg{
     position: absolute;

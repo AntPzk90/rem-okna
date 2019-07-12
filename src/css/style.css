@@ -403,7 +403,7 @@ a {
 .master-call--catalog {
   width: 100%;
   max-width: 210px;
-  text-align: right;
+  text-align: center;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-right: 10px;
@@ -976,10 +976,7 @@ a {
   padding: 10px;
   -webkit-animation: pulse 5s infinite;
   animation: pulse 5s infinite;
-  text-align: right; }
-  @media screen and (min-width: 768px) {
-    .represet__master-call {
-      text-align: center; } }
+  text-align: center; }
 
 .represet__master-call-svg {
   position: absolute;
