@@ -1,6 +1,6 @@
 .represent{
     background-color: #fafafa;
-    padding-top: 70px;
+    padding-top: 390px;
     border-top: 1px solid #eee;
     background-image: url("../imgs/bg.jpg");
     background-size: cover;
@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     position: relative;
     @media screen and  (min-width:$tablet){
-        padding-top: 78px;
+        padding-top: 150px;
         background-size: 1150px 746px;
     }
     @media screen and  (min-width:$desktop){
@@ -49,6 +49,7 @@
     }
     @media screen and  (min-width:$desktop){
         flex-direction: row;
+        align-items: flex-start;
     }
 }
 .represetnt__title{

@@ -1,6 +1,11 @@
 .header{
     position: relative;
     z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
     @media screen and  (min-width:$tablet){
         margin-bottom: -85px;
     }
@@ -102,6 +107,10 @@
         display: flex;
         @include list-reset;
     }
+    @media screen and  (min-width:936px){
+        position: absolute;
+        bottom: -60px;
+    }
     @media screen and  (min-width:$desktop){
         width: 375px;
         order: 4;
@@ -174,5 +183,28 @@
 .header__search{
     @media screen and  (min-width:$tablet){
         width: 80px;
+    }
+}
+.header--fixed{
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: $blue;
+    width: 100%;
+    z-index: 10;
+    background-image: url("../imgs/form-bg2.jpg");
+    background-size: cover;
+    background-position: 50%;
+    .header__more-list-item{
+        display: none;
+    }
+    .basket-link__svg{
+        fill: #fff;
+    }
+    .header__basket-link{
+        &:hover,
+        &:active{
+            color: #e5588a;
+        }
     }
 }

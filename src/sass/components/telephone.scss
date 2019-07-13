@@ -32,9 +32,18 @@
     position: absolute;
     top:0;
     left: 0;
+    outline: none;
     animation: pulse-btn 2s infinite;
     cursor: pointer;
     &:hover{
         background-color: #f6cb47;
     }
+}
+.telephone--close{
+    width: 60px;
+    animation: tel-off 1s ease;
+}
+.telephone--add{
+    width: 260px;
+    animation: tel-add 1s ease;
 }

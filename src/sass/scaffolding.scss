@@ -71,3 +71,19 @@ a{
       transform: scale(1);
     }
   }
+  @keyframes tel-add{
+    0%{
+      width: 60px;
+    }
+    100%{
+      width: 260px;
+    }
+  }
+  @keyframes tel-off{
+    0%{
+      width: 260px;
+    }
+    100%{
+      width: 60px;
+    }
+  }

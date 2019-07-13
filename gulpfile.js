@@ -39,7 +39,9 @@ const styleFiles = [
 //Порядок подключения js файлов
 const scriptFiles = [
    './src/js/lib.js',
-   './src/js/main.js'
+   './src/js/main.js',
+   './src/js/jquery3.4.1.min.js',
+   './src/js/script.js'
 ]
 
 //Таск для обработки стилей
@@ -77,7 +79,7 @@ gulp.task('scripts', () => {
    //Всей файлы по шаблону './src/js/**/*.js'
    return gulp.src(scriptFiles)
       //Объединение файлов в один
-      .pipe(concat('script.js'))
+      //.pipe(concat('script.js'))
       //Минификация JS
       .pipe(uglify({
          toplevel: true
