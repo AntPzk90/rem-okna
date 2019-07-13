@@ -25,6 +25,9 @@
         &:hover{
             color: $dark-blue;
         }
+        @media screen and  (min-width:$tablet){
+            padding-left:35px;
+        }
         @media screen and  (min-width:$desktop){
             padding: 32px 0;
             padding-left:35px;

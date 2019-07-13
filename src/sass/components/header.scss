@@ -2,10 +2,13 @@
     position: relative;
     z-index: 2;
     @media screen and  (min-width:$tablet){
-        margin-bottom: -88px;
+        margin-bottom: -85px;
+    }
+    @media screen and  (min-width:936px){
+        margin-bottom: -55px;
     }
     @media screen and  (min-width:$desktop){
-        margin-bottom: -67px;
+        margin-bottom: -50px;
     }
 }
 .header__logo{
@@ -16,7 +19,7 @@
     text-align: center;
     @media screen and  (min-width:$tablet){
         height: 44px;
-        width: 41.5%;
+        width: 120px;
         order: 1;
     }
     @media screen and  (min-width:$desktop){
@@ -74,8 +77,8 @@
 .header__delivery{
     display: none;
     @media screen and  (min-width:$tablet){
+        display: none;
         order: 4;
-        display: block;
         text-align: right;
         font-weight: 400;
         color: #444;
@@ -94,6 +97,11 @@
 }
 .header__more-list{
     display: none;
+    @media screen and  (min-width:$tablet){
+        order: 4;
+        display: flex;
+        @include list-reset;
+    }
     @media screen and  (min-width:$desktop){
         width: 375px;
         order: 4;
@@ -139,11 +147,10 @@
 }
 .header__user-wrapper{
     @media screen and  (min-width:$tablet){
-        order: 2;
+        width: 200px;
+        order: 3;
         display: flex;
         justify-content: space-between;
-        flex-grow: 1;
-        @include tabborder;
         &:after{
             left: 0px;
             right: -50px;
@@ -152,16 +159,16 @@
     @media screen and  (min-width:$desktop){
         order: 3;
         flex-grow: 0;
-        @include noneborder;
     }
 }
 .header__main-nav{
     @media screen and  (min-width:$tablet){
-        order: 3;
-        width: 50%;
+        order: 2;
+        width: 500px;
     }
     @media screen and  (min-width:$desktop){
         order: 1;
+        width: 50%;
     }
 }
 .header__search{

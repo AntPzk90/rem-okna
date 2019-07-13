@@ -11,17 +11,15 @@
     text-align: center;
     text-decoration: none;
     position:relative;
-    @include border;
     
     @media screen and  (min-width:$tablet){
-        @include noneborder;
+        width: 200px;
         position:relative;
         height: 88px;
-        padding-left: 80px;
+        padding-left: 32px;
         padding-top: 32px;
         padding-bottom: 32px;
         padding-right: 0;
-        border-left: 1px solid #eee;
     }
     &:hover{
         color: blue;
@@ -34,5 +32,8 @@
     position: absolute;
         top: 25px;
         left: 20px;
-        fill: $blue;      
+        fill: $blue;
+        @media screen and  (min-width:$tablet){
+            left: 10px;
+        }   
 }

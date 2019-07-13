@@ -33,21 +33,41 @@ a{
       background-position: 0 0;
     }
     10%{
-        background-position: 10% 0;
+      background-position: 10% 0;
     }
     20%{
       background-position: 20% 0;
     }
     50%{
-
       background-position: 50% 0;
     }
     80%{
-
       background-position: 80% 0;
     }
     100%{
-
       background-position: 100% 0;
+    }
+  }
+  @keyframes pulse-btn{
+    0%{
+      transform: scale(1);
+    }
+    10%{
+      transform: scale(1.05);
+    }
+    20%{
+      transform: scale(1.1);
+    }
+    50%{
+      transform: scale(1.18)
+    }
+    80%{
+      transform: scale(1.1);
+    }
+    90%{
+      transform: scale(1.05);
+    }
+    100%{
+      transform: scale(1);
     }
   }

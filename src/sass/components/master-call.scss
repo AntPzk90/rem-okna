@@ -15,12 +15,14 @@
 }
 .master-call--catalog{
     width: 100%;
-    max-width: 210px;
-    text-align: center;
+    text-align: right;
     box-sizing: border-box;
     padding-right: 10px;
     margin-bottom: 20px;
     @media screen and  (min-width:$tablet){
-        max-width: 280px;;
+        max-width: 280px;
+        padding-right: 40px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

@@ -1,7 +1,6 @@
 .week-product{
     padding-top: 30px;
     padding-bottom:36px;
-    @include wawe;
     @media screen and  (min-width:$tablet){
         padding-top: 40px;
         background-color: #fff;
@@ -33,7 +32,7 @@
         margin-top: 10px;
         flex-direction: row;
         justify-content: flex-start;
-        margin-bottom: -130px;
+        margin-bottom: -100px;
     }
 }
 .week-product__mini-title{
@@ -171,6 +170,9 @@
     margin:0 auto;
     background-color: $blue;
     color: #fff;
+    @media screen and  (min-width:$tablet){
+        margin-left: 0;
+    }
     @media screen and  (min-width:$desktop){
         margin: 0;
         max-width: 290px;

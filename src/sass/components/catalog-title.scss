@@ -2,9 +2,21 @@
     padding-top: 50px;
     padding-bottom:55px;
     background-color: #f1f1f1;
+    @media screen and  (min-width:$tablet){
+        padding-top: 70px;
+        padding-bottom: 75px;
+    }
 }
 .catalog-title__main-title{
     text-align: center;
     font-size: 27px;
     line-height: 30px;
+    @media screen and  (min-width:$tablet){
+        font-size: 43px;
+        line-height: 50px;
+    }
+    @media screen and  (min-width:$desktop){
+        font-size: 53px;
+        line-height: 57px;
+    }
 }

@@ -1,0 +1,40 @@
+.telephone{
+    height: 60px;
+    width: 260px;
+    background-color:$dark-blue;
+    border-radius: 50px;
+    text-align: right;
+    box-sizing: border-box;
+    padding-top: 14px;
+    padding-right: 20px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    @media screen and  (min-width:$tablet){
+        bottom: 30px;
+        right: 60px;
+    }
+}
+.master-call__link{
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1;
+    text-decoration: none;
+}
+.telephone__btn{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: $blue;
+    position: absolute;
+    top:0;
+    left: 0;
+    animation: pulse-btn 2s infinite;
+    cursor: pointer;
+    &:hover{
+        background-color: #f6cb47;
+    }
+}

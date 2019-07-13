@@ -57,11 +57,7 @@ block content
                         img(src="imgs/furn.jpg").weekpr-oduct__img
                     .week-product__price-wrapper
                         a.week-product__price-btn.btn
-                            | Заказать               
-                        a(href="tel:+380977736663").week-product__master-call-btn.master-call.btn
-                            svg(fill="#fff").master-call__svg
-                                use(xlink:href="imgs/sprite.svg#icon-phone")
-                            | 8097 773 66 63     
+                            | Заказать                  
         section.week-product
             .week-product__wrapper.container
                 .week-product__title-wrapper
@@ -97,11 +93,7 @@ block content
                         img(src="imgs/pekaje.jpg").weekpr-oduct__img
                     .week-product__price-wrapper
                         a.week-product__price-btn.btn
-                            | Заказать
-                        a(href="tel:+380977736663").week-product__master-call-btn.master-call.btn
-                            svg(fill="#fff").master-call__svg
-                                use(xlink:href="imgs/sprite.svg#icon-phone")
-                            | 8097 773 66 63     
+                            | Заказать    
         section.about-us
             .about-us__wrapper.container
                 h2.about-us__title
@@ -150,4 +142,9 @@ block content
                         source(media="(max-width:1150px)", srcset="imgs/tablet/map-tablet@1x.jpg, imgs/tablet/map-tablet@2x.jpg")
                         source(media="(min-width:1150px)", srcset="imgs/desktop/map-desktop@1x.jpg, imgs/desktop/map-desktop@2x.jpg")
                         img(src="imgs/tablet/map-tablet@2x.jpg").contacts__map-img
-                    
+        .telephone
+            button.telephone__btn           
+                svg(fill="#fff",height="30", width="30").telephone__svg
+                    use(xlink:href="imgs/sprite.svg#icon-phone")
+            a(href="tel:+380977736663").master-call__link
+                | 8097 773 66 63      

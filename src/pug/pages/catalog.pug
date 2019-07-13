@@ -7,59 +7,163 @@ block content
         section.catalog-title
             div.catalog-title__wrapper.container
                 h2.catalog-title__main-title
-                    | Каталог товаров
+                    | Каталог услуг и товаров
         section.catalog-items
             div.catalog-items__wrapper.container
                 h2.catalog-items__title.vis-hid
                     | Блок с товарами
                 ul.catalog-items__list
                     li.catalogs-items__list-item
-                        a(href="#").catalog-items__img-link
+                        a.catalog-items__img-link
                             .catalogs-items__images-wrapper
-                                img(src="imgs/knob.jpg").catalogs-items__picture-img
+                                img(src="imgs/furn.jpg", alt="фото фурнитуры").catalogs-items__picture-img
                         .catalog-items__txt-wrapper        
-                            a(href="#").catalog-items__title-link
+                            a.catalog-items__title-link
                                 h3.catalog-items__items-title
-                                    | Установка ручки с замком
+                                    | Регулировка фурнитуры створки
                             p.catalog-items__item-data
-                                | не позволяет открывать окно без ключа
+                                | Простая регулировка + смазка фурнитуры.
+                                br
+                                | Сложная (переустановка стеклопакета, расклинка,
+                                | регулировка) + смазка фурнитуры.
                             p.catalog-items__price
-                                | 500 грн.
-                            a(href="tel:+380977736663").master-call.btn.master-call--catalog
+                                | от80 грн. до 150 грн.
+                            a(href="#").master-call.btn.master-call--catalog
                                 svg(fill="#fff").master-call__svg
                                     use(xlink:href="imgs/sprite.svg#icon-phone")
-                                | 8097 773 66 63    
+                                | Заказать звонок   
                     li.catalogs-items__list-item
-                        a(href="#").catalog-items__img-link
+                        a.catalog-items__img-link
                             .catalogs-items__images-wrapper
-                                img(src="imgs/knob.jpg").catalogs-items__picture-img
+                                img(src="imgs/furn-2.jpg").catalogs-items__picture-img
                         .catalog-items__txt-wrapper        
-                            a(href="#").catalog-items__title-link
+                            a.catalog-items__title-link
                                 h3.catalog-items__items-title
-                                    | Установка ручки с замком
+                                    | Замена фурнитуры створки окна
                             p.catalog-items__item-data
-                                | не позволяет открывать окно без ключа
+                                | Фурнитура Maco (Австрия) полный комплект.
+                                br
+                                | Есть возможность установки противовзломной фурнитуры.
                             p.catalog-items__price
-                                | 500 грн.
-                            a(href="tel:+380977736663").master-call.btn.master-call--catalog
+                                | от 1450 грн. до 2750 грн.
+                            a(href="#").master-call.btn.master-call--catalog
                                 svg(fill="#fff").master-call__svg
                                     use(xlink:href="imgs/sprite.svg#icon-phone")
-                                | 8097 773 66 63    
-        section.catalog-video
-            .catalog-video__wrapper.container
-                .catalog-video__border-wrapper
-                    h2.catalog-video__title
-                        | Процесс производства
-                    .catalog-video__video-wrapper
-                        video(src="#"
-                            poster="imgs/mobile/video-mobile@1x.jpg").catalog-video__video
-                        button(type="button").catalog-video__play-btn
-                            svg.catalog-items__cart-svg
-                                use(xlink:href="imgs/sprite.svg#icon-play")
-
-                    p.catalog-video__txt
-                        | По просьбам наших любимых фолловеров мы сняли для вас
-                        | подробное видео о том, как появляются наши товары.
-                    a(href="#").catalog-video__btn.btn
-                        | Сделать заказ
+                                | заказать звонок    
+                    li.catalogs-items__list-item
+                        a.catalog-items__img-link
+                            .catalogs-items__images-wrapper
+                                img(src="imgs/knob-smoking.jpg").catalogs-items__picture-img
+                        .catalog-items__txt-wrapper        
+                            a.catalog-items__title-link
+                                h3.catalog-items__items-title
+                                    | Установка ручки-защелки
+                                    br
+                                    | Ручка курильщика
+                            p.catalog-items__item-data
+                                | Ручка-защелка Maco (комплект)
+                                br
+                                | (+ бесплатная регулировка двери по надобности)
+                            p.catalog-items__price
+                                | 250 грн./шт.
+                            a(href="#").master-call.btn.master-call--catalog
+                                svg(fill="#fff").master-call__svg
+                                    use(xlink:href="imgs/sprite.svg#icon-phone")
+                                | Заказать звонок   
+                    li.catalogs-items__list-item
+                        a.catalog-items__img-link
+                            .catalogs-items__images-wrapper
+                                img(src="imgs/window-knob.jpg").catalogs-items__picture-img
+                        .catalog-items__txt-wrapper        
+                            a.catalog-items__title-link
+                                h3.catalog-items__items-title
+                                    | Замена ручки оконной
+                            p.catalog-items__item-data
+                                | Качество ручки зависит от цены
+                            p.catalog-items__price
+                                | от 100 грн. до 280 грн.
+                            a(href="#").master-call.btn.master-call--catalog
+                                svg(fill="#fff").master-call__svg
+                                    use(xlink:href="imgs/sprite.svg#icon-phone")
+                                | заказать звонок    
+                    li.catalogs-items__list-item
+                        a.catalog-items__img-link
+                            .catalogs-items__images-wrapper
+                                img(src="imgs/rubber.jpg").catalogs-items__picture-img
+                        .catalog-items__txt-wrapper        
+                            a.catalog-items__title-link
+                                h3.catalog-items__items-title
+                                    | Замена уплотнительной резины
+                            p.catalog-items__item-data
+                                | Используем только качественные материалы
+                            p.catalog-items__price
+                                | от 30 грн./м.
+                            a(href="#").master-call.btn.master-call--catalog
+                                svg(fill="#fff").master-call__svg
+                                    use(xlink:href="imgs/sprite.svg#icon-phone")
+                                | заказать звонок    
+                    li.catalogs-items__list-item
+                        a.catalog-items__img-link
+                            .catalogs-items__images-wrapper
+                                img(src="imgs/glazing.jpg").catalogs-items__picture-img
+                        .catalog-items__txt-wrapper        
+                            a.catalog-items__title-link
+                                h3.catalog-items__items-title
+                                    | Замена стеклопакета
+                            p.catalog-items__item-data
+                                | Про свойства стеклопакетов почитайте в нашей статье
+                                br
+                                a(href="#").catalog-items__data-link
+                                    | Чем отличаются стелкопакеты
+                            p.catalog-items__price
+                                | от 100 грн.
+                            a(href="#").master-call.btn.master-call--catalog
+                                svg(fill="#fff").master-call__svg
+                                    use(xlink:href="imgs/sprite.svg#icon-phone")
+                                | заказать звонок    
+                    li.catalogs-items__list-item
+                        a.catalog-items__img-link
+                            .catalogs-items__images-wrapper
+                                img(src="imgs/knobx2.jpg").catalogs-items__picture-img
+                        .catalog-items__txt-wrapper        
+                            a.catalog-items__title-link
+                                h3.catalog-items__items-title
+                                    | Установка двухсторонней ручки балконной двери
+                            p.catalog-items__item-data
+                                |  Установка двухсторонней ручки балконной двери ПВХ
+                                br
+                                | возможна установка ручки с ключом
+                            p.catalog-items__price
+                                | от 700 грн. до 800 грн.
+                            a(href="#").master-call.btn.master-call--catalog
+                                svg(fill="#fff").master-call__svg
+                                    use(xlink:href="imgs/sprite.svg#icon-phone")
+                                | заказать звонок   
+                    li.catalogs-items__list-item.catalogs-items__last-list-item
+                        b.catalog-items__slogan
+                            | Если вы не нашли нужной вам услги
+                            | в нашем каталоге, вы можете позвонить
+                            | мастеру и бесплатно проконсультироваться
+                        form(action="").catalogs-items__form.form__middle
+                            fieldset.catalogs-items__fieldset.form__middle-fieldset
+                                legend.represent__legend.form__middle-legend
+                                    | Закажите 
+                                    span.form__middle-span
+                                        | звонок
+                                input(type="text",
+                                    placeholder="Ваше Имя").catalogs-items__input-text.form-middle__input-text
+                                input(type="text"
+                                    placeholder="Ваш Телефон").catalogs-items__input-tel.form-middle__input-text
+                                button(tybe="submit").catalogs-items__form-btn.form__middle-btn.btn
+                                    | Заказать звонок 
+                        b.catalog-items__slogan-bottom
+                            | Нет проблемы которую мы не сможем решить.
+                            br
+                            | Ждём вашего звонка или зазкжите звонок и мы перезвоним
+        .telephone
+            button.telephone__btn           
+                svg(fill="#fff",height="30", width="30").telephone__svg
+                    use(xlink:href="imgs/sprite.svg#icon-phone")
+            a(href="tel:+380977736663").master-call__link
+                | 8097 773 66 63      
                 

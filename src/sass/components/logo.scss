@@ -1,6 +1,5 @@
 .logo{
     position: relative;
-    @include border;
     .logo__image-tablet{
         display: none;
     }
@@ -26,6 +25,5 @@
         .logo__image-desktop{
             display: inline;
         }
-        @include noneborder;
     }
 }

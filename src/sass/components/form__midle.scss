@@ -1,5 +1,5 @@
 .form__middle{
-    background-image:url("../imgs/form-bg.jpg");
+    background-image:url("../imgs/form-bg2.jpg");
     background-size: cover;
     padding: 10px;
     height: 280px;
@@ -28,7 +28,12 @@
 }
 .form__middle-btn{
     width: 90%;
-    background-color: #f6cb47;
+    background-color:#444;
     margin-top: 10px;
     margin-bottom: 15px;
+    color: #fff;
+    border: 2px solid #fff;
+    &:hover{
+        background-color: #f6cb47;
+    }
 }
