@@ -69,6 +69,7 @@
     top:30px;
     right: 30px;
     border:none;
+    z-index: 2;
     @media screen and  (min-width:$tablet){
         display: none;
     }
@@ -195,6 +196,7 @@
     background-image: url("../imgs/form-bg2.jpg");
     background-size: cover;
     background-position: 50%;
+    animation: opacity 1s ease;
     .header__more-list-item{
         display: none;
     }
@@ -206,5 +208,13 @@
         &:active{
             color: #e5588a;
         }
+    }
+}
+.header--mobile{
+    .header__main-nav{
+        display: none;
+    }
+    .header__user-wrapper{
+        display: none;
     }
 }

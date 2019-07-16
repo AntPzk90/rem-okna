@@ -165,5 +165,17 @@ block content
                 svg(fill="#fff",height="30", width="30").telephone__svg
                     use(xlink:href="imgs/sprite.svg#icon-phone")
             a(href="tel:+380977736663").master-call__link
-                | 8097 773 66 63      
+                | 8097 773 66 63
+        form(action="#").modal-form__form
+            button.modal-form__close-btn
+                svg(fill="#fff").modal-form__close-btn-svg
+                    use(xlink:href="imgs/sprite.svg#close")
+            fieldset.modal-form__fieldset
+                legend.modal-form__legend
+                    | Закажите консультацию мастера
+                input(type="text",placeholder="Ваше Имя").modal-form__input-name
+                input(type="text",placeholder="Ваш номер телфона").modal-form__input-name
+                textarea(name="text",placeholder="Кратко опишите ваше проблему (это не обязательно)").modal-form__textarea
+                button(type="submit").modal-form__button.btn
+                    | Заказать звонок          
                 

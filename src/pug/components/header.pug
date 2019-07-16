@@ -11,13 +11,9 @@ html(lang="en")
     body
         header.header
             .header__wrapper.container
-                button.header__mobile.header__mobile--close
+                button(type="button").header__mobile.header__mobile--close
                 a(href="index.html").header__logo.logo
-                    picture.header__logo-picture
-                        source(media="(max-width:768px)", srcset="imgs/sprite.svg#logo-mobile")
-                        source(media="(max-width:1150px)", srcset="imgs/sprite.svg#logo-tablet")
-                        source(media="(min-width:1150px)", srcset="imgs/sprite.svg#logo-desktop")
-                        img(src="imgs/sprite.svg#logo-mobile", alt="logo")
+                    
                 nav.header__main-nav
                     ul.site-list
                         +navList(navItems)

@@ -10,12 +10,7 @@
   <body>
     <header class="header">
       <div class="header__wrapper container">
-        <button class="header__mobile header__mobile--close"></button><a class="header__logo logo" href="index.html">
-          <picture class="header__logo-picture">
-            <source media="(max-width:768px)" srcset="imgs/sprite.svg#logo-mobile"/>
-            <source media="(max-width:1150px)" srcset="imgs/sprite.svg#logo-tablet"/>
-            <source media="(min-width:1150px)" srcset="imgs/sprite.svg#logo-desktop"/><img src="imgs/sprite.svg#logo-mobile" alt="logo"/>
-          </picture></a>
+        <button class="header__mobile header__mobile--close" type="button"></button><a class="header__logo logo" href="index.html"></a>
         <nav class="header__main-nav">
           <ul class="site-list">
             <li class="site-list__item"><a href="catalog.html">Ремонт  регулировка</a></li>
@@ -77,7 +72,7 @@
           это дешевле нового окна и нет разрушений после монтажа.
         </p>
         <div class="week-product__img-wrapper"><img class="weekpr-oduct__img" src="imgs/furn.jpg"/></div>
-        <div class="week-product__price-wrapper"><a class="week-product__price-btn btn">Заказать                  </a></div>
+        <div class="week-product__price-wrapper"><a class="week-product__price-btn btn master-call">Заказать                  </a></div>
       </div>
     </div>
   </section>
@@ -108,7 +103,7 @@
           </tr>
         </table>
         <div class="week-product__img-wrapper"><img class="weekpr-oduct__img" src="imgs/pekaje.jpg"/></div>
-        <div class="week-product__price-wrapper"><a class="week-product__price-btn btn">Заказать    </a></div>
+        <div class="week-product__price-wrapper"><a class="week-product__price-btn btn master-call">Заказать    </a></div>
       </div>
     </div>
   </section>
@@ -150,8 +145,22 @@
       <svg class="telephone__svg" fill="#fff" height="30" width="30">
         <use xlink:href="imgs/sprite.svg#icon-phone"></use>
       </svg>
-    </button><a class="master-call__link" href="tel:+380977736663">8097 773 66 63      </a>
+    </button><a class="master-call__link" href="tel:+380977736663">8097 773 66 63</a>
   </div>
+  <form class="modal-form__form" action="#">
+    <button class="modal-form__close-btn">
+      <svg class="modal-form__close-btn-svg" fill="#fff">
+        <use xlink:href="imgs/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <fieldset class="modal-form__fieldset">
+      <legend class="modal-form__legend">Закажите консультацию мастера</legend>
+      <input class="modal-form__input-name" type="text" placeholder="Ваше Имя"/>
+      <input class="modal-form__input-name" type="text" placeholder="Ваш номер телфона"/>
+      <textarea class="modal-form__textarea" name="text" placeholder="Кратко опишите ваше проблему (это не обязательно)"></textarea>
+      <button class="modal-form__button btn" type="submit">Заказать звонок</button>
+    </fieldset>
+  </form>
 </main>
 <footer class="footer">
   <div class="footer__wrapper container"><a class="footer__logo logo">
