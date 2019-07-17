@@ -74,12 +74,14 @@ $(document).ready(function(){
             evt.preventDefault();
             $(".overlay").fadeOut(300).remove();
             $(".modal-form__form").removeClass("modal-form__form--active");
+            $("body").removeAttr("style");
         });
     };
     $(".master-call").on("click",popupBtnClickHendler);
     // работа с закрытием попапа.
     var closeBtnClickHendler = function(evt){
         evt.preventDefault();
+        $("body").removeAttr("style");
         $(".modal-form__form").removeClass("modal-form__form--active");
         $(".overlay").fadeOut(300).remove();
     }
