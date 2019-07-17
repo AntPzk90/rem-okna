@@ -196,9 +196,12 @@
     background-image: url("../imgs/form-bg2.jpg");
     background-size: cover;
     background-position: 50%;
-    animation: opacity .2s ease;
+    //animation: opacity-anim .2s ease;
     .header__more-list-item{
         display: none;
+        @media screen and  (min-width:$tablet){
+            display: block;
+        }
     }
     .basket-link__svg{
         fill: #fff;
@@ -222,11 +225,23 @@
         color:#fff;
     }
 }
-.header--mobile{
+.header--mobile-off{
     .header__main-nav{
         display: none;
     }
     .header__user-wrapper{
         display: none;
+    }
+    animation: mobile-menu-off .6s ease;
+}
+.header--mobile-on{
+    animation: mobile-menu-on .4s ease;
+    .header__main-nav{
+        display: block;
+        animation: opacity 1s ease;
+    }
+    .header__user-wrapper{
+        display: block;
+        animation: opacity-anim 1s ease;
     }
 }

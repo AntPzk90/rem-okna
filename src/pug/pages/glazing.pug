@@ -1,0 +1,121 @@
+extends .././layouts/main-layout.pug
+block title
+    title
+        | Замена стеклопакетов
+block content
+    main
+        section.glazing-title.title
+            .glazing-title__wrapper.title__wrapper.container
+                h2.glazing-title__main-title.title__main
+                    | Замена стеклопакетов
+        section.glazing-catalog
+            .glazing-catalog__wrapper.container
+                p.glazing-catalog__dscr
+                    span.glazing-catalog__why
+                        | Зачем
+                        | мне это?
+                    | Замена стеклопакета нужна не только в случае повреждения
+                    | или разгерметизации. Это отличный способ шумоизолировать
+                    | жилое помещение от внешних шумов. И наконеу самое важное
+                    | это энергосбережение, которое поможет вам сохранить тепло
+                    | в доме и существенно сэкономить на отоплении.
+                ul.glazing-catalog__list
+                    li.glazing-catalog__list-item
+                        .week-product__wrapper.container
+                            .week-product__title-wrapper
+                                h3.week-product__title
+                                    | Стеклопакет с солнцезащитой
+                                    br
+                                    | SOLAR (4s-10-4-10-4i)
+                            .week-product__dscr-wrapper.glazing-catalog__dscr__wrapper
+                                p.week-product__dscr.glazing-catalog__dscr-inner
+                                        | Двухкамерный стелопакет.
+                                        br
+                                        | Наружное стелко
+                                        | низкоэмиссионное (с солнцезащитой), 
+                                        | внутренее энергосберегающее.
+                                        | Позволяет минимум в 2 раза уменьшить энергопотери.
+                                table.week-prouct__data.data-table.glazing-catalog__data
+                                    tr.data-table__tr
+                                        td.data-table__td.data-table__title
+                                            | Дистанция
+                                        td(align="right").data-table__td.data-table__value
+                                            | от 24 мм
+                                    tr.data-table__tr
+                                        td.data-table__td.data-table__title
+                                            | Коэффициент теплопередачи
+                                        td(align="right").data-table__td.data-table__value
+                                            | 1.2
+                                    tr.data-table__tr
+                                        td.data-table__td.data-table__title
+                                            | Размер
+                                        td(align="right").data-table__td.data-table__value
+                                            | От 0.5 м.кв.
+                                .week-product__img-wrapper
+                                    img(src="imgs/pekaje.jpg").weekpr-oduct__img
+                                .week-product__price-wrapper.glazing-catalog__price-wrapper
+                                    a.week-product__price-btn.btn.master-call.glazing-catalog__master-call
+                                        | Заказать
+                    li.glazing-catalog__list-item
+                        .week-product__wrapper.container
+                            .week-product__title-wrapper
+                                h3.week-product__title
+                                    | Стеклопакет с двойным энерго
+                                    br
+                                    | (4i-10-4-10-4i)
+                            .week-product__dscr-wrapper.glazing-catalog__dscr__wrapper
+                                p.week-product__dscr.glazing-catalog__dscr-inner
+                                        | Немного отличается в цене от пакета со стеклом
+                                        | SOLAR
+                                        | Наружное стелко
+                                        | С напылением серебра, так само как и  
+                                        | внутренее энергосберегающее.
+                                        | Позволяет минимум значительно уменьшить энергопотери.
+                                        | Можно применять если не солнечная сторона.
+                                table.week-prouct__data.data-table.glazing-catalog__data
+                                    tr.data-table__tr
+                                        td.data-table__td.data-table__title
+                                            | Дистанция
+                                        td(align="right").data-table__td.data-table__value
+                                            | от 24 мм
+                                    tr.data-table__tr
+                                        td.data-table__td.data-table__title
+                                            | Коэффициент теплопередачи
+                                        td(align="right").data-table__td.data-table__value
+                                            | 1.0
+                                    tr.data-table__tr
+                                        td.data-table__td.data-table__title
+                                            | Размер
+                                        td(align="right").data-table__td.data-table__value
+                                            | От 0.5 м.кв.
+                                .week-product__img-wrapper
+                                    img(src="imgs/pekaje.jpg").weekpr-oduct__img
+                                .week-product__price-wrapper.glazing-catalog__price-wrapper
+                                    a.week-product__price-btn.btn.master-call.glazing-catalog__master-call
+                                        | Заказать
+                p.glazing-catalog__dscr
+                    span.glazing-catalog__why
+                        | Всегда
+                        | поможем
+                    | Если у вас нестандартная полмка или
+                    | просто разбито стекло, его всегда можно заменить
+                    | быстро, качественно и совсем недорого.
+        .telephone.telephone--close
+            button.telephone__btn           
+                svg(fill="#fff",height="30", width="30").telephone__svg
+                    use(xlink:href="imgs/sprite.svg#icon-phone")
+            a(href="tel:+380977736663").master-call__link
+                | 8097 773 66 63
+        form(action="#").modal-form__form
+            button.modal-form__close-btn
+                svg(fill="#fff").modal-form__close-btn-svg
+                    use(xlink:href="imgs/sprite.svg#close")
+            fieldset.modal-form__fieldset
+                legend.modal-form__legend
+                    | Закажите консультацию мастера
+                input(type="text",placeholder="Ваше Имя").modal-form__input-name
+                input(type="text",placeholder="Ваш номер телфона").modal-form__input-name
+                textarea(name="text",placeholder="Кратко опишите ваше проблему (это не обязательно)").modal-form__textarea
+                button(type="submit").modal-form__button.btn
+                    | Заказать звонок          
+                                                        

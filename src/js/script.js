@@ -6,12 +6,13 @@ $(document).ready(function(){
     var header =  $(".header");
     if(bodyWidth < 750){
         $(window).on("scroll", function(){
-            console.log(1)
-            header.addClass("header--mobile");
+            header.removeClass("header--mobile-on");
+            header.addClass("header--mobile-off");
             $(".header__mobile").addClass("header__mobile--open");
             $(".represent").css("paddingTop","150px");
             if($(window).scrollTop() == 0){
-                header.removeClass("header--mobile");
+                header.removeClass("header--mobile-off");
+                header.addClass("header--mobile-on");
                 $(".represent").removeAttr("style");
                 $(".header__mobile").removeClass("header__mobile--open");
                 $(".header__mobile").addClass("header__mobile--close");
@@ -25,11 +26,15 @@ $(document).ready(function(){
         if($(".header__mobile").hasClass("header__mobile--open")){
             $(".header__mobile").removeClass("header__mobile--open");
             $(".header__mobile").addClass("header__mobile--close");
-            header.removeClass("header--mobile");
+            header.removeClass("header--mobile-off");
+            header.addClass("header--mobile-on");
+            $(".represent").removeAttr("style");
         }
         else{
-            header.addClass("header--mobile");
+            header.removeClass("header--mobile-on");
+            header.addClass("header--mobile-off");
             $(".header__mobile").addClass("header__mobile--open");
+            $(".represent").css("paddingTop","150px");
         }
     })
     if($(window).scrollTop()!= 0){
@@ -53,7 +58,7 @@ $(document).ready(function(){
         if($(".telephone").hasClass("telephone--close")){
             $(".telephone").removeClass("telephone--close");
             $(".telephone").addClass("telephone--add");
-            $(".master-call__link").fadeIn(1200);
+            $(".master-call__link").css("display","none");
         }else{
             $(".telephone").removeClass("telephone--add");
             $(".telephone").addClass("telephone--close");
