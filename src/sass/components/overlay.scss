@@ -4,7 +4,8 @@
     left:0;
     width:100vw;
     height:100vh;
-    background-color:rgba($color: #56c3b2, $alpha: 0.5);
+    background-color:rgba($color: #56c3b2, $alpha: .6);
     z-index: 10;
     animation: opacity .5s ease;
+    overflow: hidden;
 }

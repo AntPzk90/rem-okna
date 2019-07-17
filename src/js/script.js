@@ -50,7 +50,7 @@ $(document).ready(function(){
 	      header.removeClass("header--fixed");
 	    };
     });
-    // работа с появлением попапа
+    // работа с появлением номера телефона
     var telBtnClickHendler = function(evt){
         evt.preventDefault();
         $()
@@ -65,9 +65,10 @@ $(document).ready(function(){
         }
     }
     $(".telephone__btn").on("click",telBtnClickHendler);
+    //появление попапа
     var popupBtnClickHendler = function(evt){
         evt.preventDefault();
-        $("body").append('<div class="overlay"></div>');
+        $("body").css("overflow","hidden").append('<div class="overlay"></div>');
         $(".modal-form__form").addClass("modal-form__form--active");
         $(".overlay").on("click",function(evt){
             evt.preventDefault();
