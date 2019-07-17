@@ -70,6 +70,7 @@
     right: 30px;
     border:none;
     z-index: 2;
+    outline: none;
     @media screen and  (min-width:$tablet){
         display: none;
     }
@@ -223,6 +224,10 @@
     }
     .site-list__item a{
         color:#fff;
+        &:hover,
+        &:active{
+            color: #f6cb47;
+        }
     }
     .header__basket-link{
         color:#fff;

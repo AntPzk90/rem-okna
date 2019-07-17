@@ -730,7 +730,7 @@ a {
   background-color: #f1f1f1; }
   @media screen and (min-width: 768px) {
     .title {
-      padding-top: 140px;
+      padding-top: 180px;
       padding-bottom: 75px; } }
 
 .title__main {
@@ -818,7 +818,8 @@ a {
   top: 30px;
   right: 30px;
   border: none;
-  z-index: 2; }
+  z-index: 2;
+  outline: none; }
   @media screen and (min-width: 768px) {
     .header__mobile {
       display: none; } }
@@ -997,6 +998,8 @@ a {
     fill: #e5588a; }
   .header--fixed .site-list__item a {
     color: #fff; }
+    .header--fixed .site-list__item a:hover, .header--fixed .site-list__item a:active {
+      color: #f6cb47; }
   .header--fixed .header__basket-link {
     color: #fff; }
   .header--fixed .header__mobile--close {
