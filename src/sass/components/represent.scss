@@ -1,6 +1,6 @@
 .represent{
     background-color: #fafafa;
-    padding-top: 340px;
+    padding-top: 150px;
     border-top: 1px solid #eee;
     background-image: url("../imgs/bg.jpg");
     background-size: cover;
@@ -39,6 +39,21 @@
     min-height: 305px;
     @media screen and  (min-width:$tablet){
         padding-top: 80px;
+    }
+}
+.represent__mobile-promo{
+    display:flex;
+    box-sizing:border-box;
+    padding:0 30px;
+    margin-bottom:90px;
+    .represent__mobile-promo-slogan{
+        font-weight:bold;
+        font-size:17px;
+        text-transform:uppercase;
+        text-align:center;
+    }
+    @media screen and  (min-width:$tablet){
+        display:none;
     }
 }
 .represent__wrapper-form{

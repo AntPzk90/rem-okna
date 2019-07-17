@@ -59,8 +59,8 @@
 }
 .header__mobile{
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -202,6 +202,9 @@
         @media screen and  (min-width:$tablet){
             display: block;
         }
+        @media screen and  (min-width:$desktop){
+            display: none;
+        }
     }
     .basket-link__svg{
         fill: #fff;
@@ -223,6 +226,12 @@
     }
     .header__basket-link{
         color:#fff;
+    }
+    .header__mobile--close{
+        background-image: url("../imgs/sprite.svg#icon-menu-close-white");
+    }
+    .header__mobile--open{
+        background-image: url("../imgs/sprite.svg#icon-menu-open-white");
     }
 }
 .header--mobile-off{

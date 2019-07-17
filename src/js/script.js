@@ -1,19 +1,18 @@
 $(document).ready(function(){
     // размер контенера ( чтоб понять какой перед нами экран )
     var bodyWidth = $("body").width();
-    console.log(bodyWidth);
     // работа с шапкой сайта(если сайт скролился то добавляем модификатор)
     var header =  $(".header");
     if(bodyWidth < 750){
+        $(".master-call__link").css("display","none");
         $(window).on("scroll", function(){
             header.removeClass("header--mobile-on");
             header.addClass("header--mobile-off");
+            $(".header__mobile").removeClass("header__mobile--close");
             $(".header__mobile").addClass("header__mobile--open");
-            $(".represent").css("paddingTop","150px");
             if($(window).scrollTop() == 0){
                 header.removeClass("header--mobile-off");
                 header.addClass("header--mobile-on");
-                $(".represent").removeAttr("style");
                 $(".header__mobile").removeClass("header__mobile--open");
                 $(".header__mobile").addClass("header__mobile--close");
             }
@@ -23,18 +22,18 @@ $(document).ready(function(){
     }
     // клин на бургер
     $(".header__mobile").on("click", function(evt){
+        evt.preventDefault();
         if($(".header__mobile").hasClass("header__mobile--open")){
             $(".header__mobile").removeClass("header__mobile--open");
             $(".header__mobile").addClass("header__mobile--close");
             header.removeClass("header--mobile-off");
             header.addClass("header--mobile-on");
-            $(".represent").removeAttr("style");
         }
         else{
             header.removeClass("header--mobile-on");
             header.addClass("header--mobile-off");
+            $(".header__mobile").removeClass("header__mobile--close");
             $(".header__mobile").addClass("header__mobile--open");
-            $(".represent").css("paddingTop","150px");
         }
     })
     if($(window).scrollTop()!= 0){
@@ -56,13 +55,13 @@ $(document).ready(function(){
         evt.preventDefault();
         $()
         if($(".telephone").hasClass("telephone--close")){
+            $(".master-call__link").fadeIn(400).css("display","inline-block");;
             $(".telephone").removeClass("telephone--close");
             $(".telephone").addClass("telephone--add");
-            $(".master-call__link").css("display","none");
         }else{
+            $(".master-call__link").css("display","none");
             $(".telephone").removeClass("telephone--add");
-            $(".telephone").addClass("telephone--close");
-            $(".master-call__link").fadeOut(300);
+            $(".telephone").addClass("telephone--close")
         }
     }
     $(".telephone__btn").on("click",telBtnClickHendler);
