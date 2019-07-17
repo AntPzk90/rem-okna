@@ -196,7 +196,7 @@
     background-image: url("../imgs/form-bg2.jpg");
     background-size: cover;
     background-position: 50%;
-    animation: opacity 1s ease;
+    animation: opacity .2s ease;
     .header__more-list-item{
         display: none;
     }
@@ -208,6 +208,18 @@
         &:active{
             color: #e5588a;
         }
+        &:hover,
+        &:active{
+            .basket-link__svg{
+                fill:#e5588a;
+            }
+        }
+    }
+    .site-list__item a{
+        color:#fff;
+    }
+    .header__basket-link{
+        color:#fff;
     }
 }
 .header--mobile{

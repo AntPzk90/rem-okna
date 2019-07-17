@@ -10,7 +10,10 @@
   <body>
     <header class="header">
       <div class="header__wrapper container">
-        <button class="header__mobile header__mobile--close" type="button"></button><a class="header__logo logo" href="index.html"></a>
+        <button class="header__mobile header__mobile--close" type="button"></button><a class="header__logo logo" href="index.html">
+          <svg width="110" height="54">
+            <use xlink:href="imgs/sprite.svg#logo-tablet"></use>
+          </svg></a>
         <nav class="header__main-nav">
           <ul class="site-list">
             <li class="site-list__item"><a href="catalog.html">Ремонт  регулировка</a></li>
@@ -46,7 +49,7 @@
             <p class="catalog-items__item-data">Простая регулировка + смазка фурнитуры.<br/>Сложная (переустановка стеклопакета, расклинка,
               регулировка) + смазка фурнитуры.
             </p>
-            <p class="catalog-items__price">от80 грн. до 150 грн.</p><a class="master-call btn master-call--catalog" href="#">
+            <p class="catalog-items__price">от 80 грн. до 150 грн.</p><a class="master-call btn master-call--catalog" href="#">
               <svg class="master-call__svg" fill="#fff">
                 <use xlink:href="imgs/sprite.svg#icon-phone"></use>
               </svg>Заказать звонок   </a>
@@ -134,7 +137,7 @@
       </ul>
     </div>
   </section>
-  <div class="telephone">
+  <div class="telephone telephone--close">
     <button class="telephone__btn">          
       <svg class="telephone__svg" fill="#fff" height="30" width="30">
         <use xlink:href="imgs/sprite.svg#icon-phone"></use>

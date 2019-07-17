@@ -6,10 +6,19 @@ $(document).ready(function(){
     var header =  $(".header");
     if(bodyWidth < 750){
         $(window).on("scroll", function(){
+            console.log(1)
             header.addClass("header--mobile");
             $(".header__mobile").addClass("header__mobile--open");
-            $(".represent").css("paddingTop","150px")
+            $(".represent").css("paddingTop","150px");
+            if($(window).scrollTop() == 0){
+                header.removeClass("header--mobile");
+                $(".represent").removeAttr("style");
+                $(".header__mobile").removeClass("header__mobile--open");
+                $(".header__mobile").addClass("header__mobile--close");
+            }
         });
+    }else{
+        $(".telephone").removeClass("telephone--close");
     }
     // клин на бургер
     $(".header__mobile").on("click", function(evt){
@@ -37,14 +46,6 @@ $(document).ready(function(){
 	      header.removeClass("header--fixed");
 	    };
     });
-    //работа с показом кнопки номера телефона
-    var telephoneBtnFunction = function(sizeVp){
-        if(sizeVp >= 1050){
-            $(".telephone").removeClass("telephone--close")
-        }
-    }
-    // если версия десктоп то номер по умолчанию показан
-    telephoneBtnFunction(bodyWidth);
     // работа с появлением попапа
     var telBtnClickHendler = function(evt){
         evt.preventDefault();

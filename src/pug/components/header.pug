@@ -13,7 +13,8 @@ html(lang="en")
             .header__wrapper.container
                 button(type="button").header__mobile.header__mobile--close
                 a(href="index.html").header__logo.logo
-                    
+                    svg(width="110",height="54")
+                            use(xlink:href="imgs/sprite.svg#logo-tablet")
                 nav.header__main-nav
                     ul.site-list
                         +navList(navItems)

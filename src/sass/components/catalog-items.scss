@@ -3,6 +3,9 @@
 }
 .catalog-items__list{
     @include list-reset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     @media screen and  (min-width:$tablet){
         display: flex;
         flex-direction: column;
